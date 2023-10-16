@@ -1,13 +1,9 @@
-import telegram
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, Application, ContextTypes
+from telegram.ext import CommandHandler, Application, ContextTypes
 import ccxt
 
 # Replace with your Telegram Bot API Token
 TELEGRAM_API_TOKEN = '6611232105:AAHx7Xc46vMfVLbPMrw-Sl4RJrxDbo1tW1I'
-
-# Create a bot instance
-bot = telegram.Bot(token=TELEGRAM_API_TOKEN)
 
 # Create the Application and pass it your bot's token.
 application = Application.builder().token(TELEGRAM_API_TOKEN).build()
